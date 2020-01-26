@@ -1,12 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin|Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cabin|Montserrat&display=swap");
 body {
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  clear: both; }
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; }
+
+textarea {
+  padding: 12px 20px;
+  font-size: 15px;
+  line-height: 1.2;
+  font-family: sans-serif;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   box-sizing: border-box; }
 
@@ -114,24 +128,55 @@ span.psw {
 
   .cancelbtn {
     width: 100%; } }
+.field {
+  display: block;
+  width: 50%; }
+
+header {
+  clear: both; }
+
+#fieldprompt {
+  text-align: center;
+  font-family: Cabin; }
+
+#desc {
+  height: 200px; }
+
+#formcontainer {
+  padding: 20px; }
+
+footer {
+  clear: both; }
+
+h3 {
+  font-size: 50px;
+  color: #32cd32;
+  margin: auto;
+  text-align: center; }
+
 h1 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 60px;
-  color: #88fc03;
+  font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 120px;
+  color: #32cd32;
   text-align: center; }
 
 h2 {
-  text-align: center; }
+  text-align: center;
+  color: white; }
+
+#dashboard {
+  clear: both; }
 
 button {
-  float: right;
-  margin: 10px; }
+  display: block;
+  margin: auto; }
 
-img {
-  margin: 10px;
-  width: 100px;
-  height: auto;
-  float: left; }
+#logo {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 200px;
+  height: auto; }
 
 section {
   clear: both; }
@@ -139,5 +184,19 @@ section {
 #register {
   float: right;
   margin: 10px; }
+
+#mid {
+  padding: 30px 0;
+  background-color: black;
+  font-family: "Montserrat"; }
+
+footer {
+  margin-top: 40px;
+  text-align: center; }
+
+#login {
+  margin-top: 30px;
+  border-radius: 10px;
+  font-size: 20pt; }
 
 /*# sourceMappingURL=style.css.map */

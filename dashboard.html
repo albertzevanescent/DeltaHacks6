@@ -3,24 +3,29 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>RadarDishes</title>
+		<link rel="stylesheet" href="scss/style.css">
+		<title>Dashboard</title>
 	</head>
 	<body>
 		<header>
 			<img id="logo" src="logolight.png" class="d-inline-block align-top" alt="RadarDishes logo">
 		</header>
-		<section>
-			<form class="modal-content animate" action="write_page.php" method="post">
-				<input type="text" placeholder="Enter Username" name="name" required>
-				<input type="text" placeholder="Enter Username" name="description" required>
-				<input type="text" placeholder="Enter Username" name="vacancy" required>
-				<input type="text" placeholder="Enter Username" name="promotions" required>
-				<input type="text" placeholder="Enter Username" name="lat" required>
-				<input type="text" placeholder="Enter Username" name="long" required>
-					<button type="submit">Submit</button>
+		<h3>Welcome!</h3>
+		<section id="formcontainer">
+			<form action="write_page.php" method="post">
+				<p id="fieldprompt" >Please fill in the following:</p>
+				<input class="field" type="text" placeholder="Store Name" name="name" required>
+				<textarea id="desc" class="field" type="text" placeholder="Description" name="description" required></textarea>
+				<input class="field" type="text" placeholder="Vacancy" name="vacancy" required>
+				<input class="field" type="text" placeholder="Promotions" name="promotions" required>
+				<input class="field" type="text" placeholder="Latitude" name="lat" required>
+				<input class="field" type="text" placeholder="Longitude" name="long" required>
+				<button class="field" type="submit">Submit</button>
 			</form>
-
 		</section>
+		<footer id="bottom">
+			RadarDishes Copyright © 2020
+		</footer>
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

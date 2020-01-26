@@ -15,32 +15,40 @@
 	</head>
 	<body>
 		<header>
-			<img id="logo" src="logolight.png" class="d-inline-block align-top" alt="RadarDishes logo">
-		<button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-		<div id="id01" class="modal">
-			<form class="modal-content animate" action="action_page.php" method="post">
-				<div class="imgcontainer">
-					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-					<img src="img_avatar2.png" alt="Avatar" class="avatar">
-				</div>
-				<div class="container">
-					<label for="uname"><b>Username</b></label>
-					<input type="text" placeholder="Enter Username" name="uname" required>
+			<img id="logo" src="logolight.png" class="" alt="RadarDishes logo">
+			<div id="top">
+				<h1>Radar Dishes</h1>
+			</div>
+			<div id="mid">
+				<h2>You make the food. We bring the people.</h2>
+				<button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+				<div id="id01" class="modal">
+					<form class="modal-content animate" action="action_page.php" method="post">
+						<div class="imgcontainer">
+							<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+						</div>
+						<div class="container">
+							<label for="uname"><b>Username</b></label>
+							<input type="text" placeholder="Enter Username" name="uname" required>
 
-					<label for="pass"><b>Password</b></label>
-					<input type="password" placeholder="Enter Password" name="pass" required>
+							<label for="pass"><b>Password</b></label>
+							<input type="password" placeholder="Enter Password" name="pass" required>
 
-					<button type="submit">Login</button>
-					<label>
-						<input type="checkbox" checked="checked" name="remember"> Remember me
-					</label>
+							<button id="login" type="submit">Login</button>
+							<label>
+								<input type="checkbox" checked="checked" name="remember"> Remember me
+							</label>
+						</div>
+						<div class="container" style="background-color:#f1f1f1">
+							<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+							<span class="pass">Forgot <a href="#">password?</a></span>
+						</div>
+					</form>
 				</div>
-				<div class="container" style="background-color:#f1f1f1">
-					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-					<span class="pass">Forgot <a href="#">password?</a></span>
-				</div>
-			</form>
-		</div>
+			</div>
+			<footer id="bottom">
+				RadarDishes Copyright © 2020
+			</footer>
 		<script>
 			// Get the modal
 			var modal = document.getElementById('id01');
@@ -52,10 +60,6 @@ window.onclick = function(event) {
 }
 		</script>
 		</header>
-		<section>
-			<h1>RadarDishes</h1>
-			<h2>You make the food. We help you get found.</h2>
-		</section>
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -1,12 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Montserrat&display=swap');
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	clear: both;
+
 }
 /* Full-width input fields */
 input[type=text], input[type=password] {
-	width: 100%;
 	padding: 12px 20px;
-	margin: 8px 0;
-	display: inline-block;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+textarea {
+	padding: 12px 20px;
+	font-size: 15px;
+	line-height: 1.2;
+	font-family: sans-serif;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
 }
@@ -118,4 +133,40 @@ span.psw {
 	.cancelbtn {
 		width: 100%;
 	}
+}
+
+.field {
+	display: block;
+	width: 50%;
+}
+
+header {
+	clear: both;
+}
+
+#fieldprompt {
+	text-align: center;
+	font-family: Cabin;
+}
+	
+#desc {
+	height: 200px;
+}
+
+#formcontainer {
+	padding: 20px;
+	//border-width:3px;
+	//border-style: solid;
+	//border-radius: 3px;
+}
+
+footer {
+	clear: both;
+}
+
+h3 {
+	font-size:50px;;
+	color:#32cd32;
+	margin: auto;
+	text-align:center;
 }
